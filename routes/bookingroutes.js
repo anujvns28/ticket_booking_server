@@ -6,7 +6,7 @@ const auth = require("../middleware/authmiddleware");
 const {
   reserveSeats,
   confirmBooking,
-} = require("../controllers/bookingcontroller");
+} = require("../controllers/bookingController");
 
 router.post("/reserve", auth, reserveSeats);
 router.post("/bookings", auth, confirmBooking);
